@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergency Service Directory</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="bg-[#f5fff6] min-h-screen">
+  <!-- Navbar -->
+  <nav class="px-6 py-3 bg-white shadow-md">
+    <div class="flex flex-col items-center justify-between md:flex-row ">
+      <!-- Left side with logo and text -->
+      <div class="flex items-center">
+        <img src="./assets/logo.png" alt="Emergency Service Logo" class="w-[50px] h-[50px] mr-3">
+        <div class="flex flex-col leading-tight">
+          <h1 class="text-xl font-extrabold text-green-800">Emergency</h1>
+          <h1 class="text-xl font-extrabold text-green-800">Service</h1>
+        </div>
+      </div>
+      <!-- Right side with icons and copy button -->
+      <div class="flex flex-wrap items-center justify-center gap-4 mt-3 md:mt-0">
+        <div class="flex items-center gap-2 bg-[#41ff6b1a] rounded-full px-6 py-2">
+          <span id="heart-count" class="font-bold text-black">0</span>
+          <img src="./assets/heart.png" alt="Heart Icon" class="w-5 h-5">
+        </div>
+        <div class="flex items-center gap-2 bg-[#41ff6b1a] rounded-full px-4 py-2">
+          <span id="coin-count" class="font-bold text-black">100</span>
+          <img src="./assets/coin.png" alt="Coin Icon" class="w-5 h-5">
+        </div>
+        <div class="bg-[#00a63e] text-white px-5 py-2 rounded-full flex items-center">
+          <span id="copy-count">0</span>
+          <span class="ml-1">Copy</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
