@@ -314,9 +314,23 @@
         </div>
       </div>
 
+      <!-- Right Column - Call History -->
+      <div class="w-full p-4 bg-white rounded-lg shadow-md lg:w-1/4">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-xl font-semibold text-black"><i class="text-gray-500 fa-regular fa-clock"></i> Call History
+          </h2>
+          <button id="clear-history"
+            class="btn btn-sm btn-outline bg-[#00a63e] text-white px-5 py-2 rounded-full flex items-center">Clear</button>
+        </div>
+        <div id="call-history" class="space-y-3">
+          <!-- History items will be added here -->
+          <p class="py-6 text-center text-gray-500">No call history yet</p>
+        </div>
+      </div>
+    </div>
+  </main>
 
-
-      <script src="./script.js"></script>
+  <script src="./script.js"></script>
 </body>
 
 </html>
